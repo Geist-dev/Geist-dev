@@ -29,7 +29,7 @@
 
 | Проект | Описание | Стек | Ссылка |
 |--------|----------|------|--------|
-| 🛡️ Moderator Panel | Панель модератора с авторизацией, TOS и поиском | FastAPI, React, SQLite | [GitHub](#) |
+| 🎮 Close bot | Бот для организации матчей, в CS2, Dota 2 и Valorant! | Python, SQLite | [GitHub](#) |
 | 🤖 Discord Selfbot System | Многоботовая система с ротацией токенов и slash-командами | Python, websockets | [GitHub](#) |
 | 🔐 VPN Telegram Setup | VPN под iOS/Android через Telegram | StrongSwan, Python | [GitHub](#) |
 
