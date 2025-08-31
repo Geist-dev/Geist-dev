@@ -27,11 +27,9 @@
 
 ### 🧩 Проекты
 
-| Проект | Описание | Стек | Ссылка |
-|--------|----------|------|--------|
-| 🎮 Close bot | Бот для организации матчей, в CS2, Dota 2 и Valorant! | Python, SQLite | [GitHub](https://github.com/Geist-dev/close-discord) |
-| 🤖 Discord Selfbot System | Многоботовая система с ротацией токенов и slash-командами | Python, websockets | [GitHub](#) |
-| 🔐 VPN Telegram Setup | VPN под iOS/Android через Telegram | StrongSwan, Python | [GitHub](#) |
+<!-- PROJECTS:START -->
+<!-- PROJECTS:END -->
+
 
 ---
 
