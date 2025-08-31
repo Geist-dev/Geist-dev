@@ -3,7 +3,7 @@ name: Update README projects
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "18 51 * * *"   # ежедневный запуск
+    - cron: "8 19 * * *"   # ежедневный запуск
   push:
     branches: ["main", "master"]
 
