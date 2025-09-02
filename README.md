@@ -30,8 +30,8 @@
 <!-- PROJECTS:START -->
 | Проект | Описание | Стек | Ссылка |
 |--------|----------|------|--------|
-| **geist-dev.github.io** | Простой сайт-визитка для личного портфолио / резюме / презентации проектов.   Содержит информацию о себе, контакты и ссылки на социальные сети. | HTML | [GitHub](https://github.com/Geist-dev/geist-dev.github.io) |
 | **Geist-dev** | Мой README который обновляется каждый день через скрипт с новыми проектами. | Python | [GitHub](https://github.com/Geist-dev/Geist-dev) |
+| **geist-dev.github.io** | Простой сайт-визитка для личного портфолио / резюме / презентации проектов.   Содержит информацию о себе, контакты и ссылки на социальные сети. | HTML | [GitHub](https://github.com/Geist-dev/geist-dev.github.io) |
 | **File-Storage** | Маленький, но полноценный pet-project на Python/JS — личное файловое хранилище с аутентификацией, drag&amp;drop загрузкой, тегами и корзиной. | Python | [GitHub](https://github.com/Geist-dev/File-Storage) |
 | **close-discord** | Бот для организации матчей, турниров в CS2, Dota 2 и Valorant! | Python | [GitHub](https://github.com/Geist-dev/close-discord) |
 <!-- PROJECTS:END -->
