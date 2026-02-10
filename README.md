@@ -22,6 +22,13 @@
 ![Docker](https://img.shields.io/badge/-Docker-111?style=flat&logo=docker)
 ![Linux](https://img.shields.io/badge/-Linux-111?style=flat&logo=linux)
 ![SQLite](https://img.shields.io/badge/-SQLite-111?style=flat&logo=sqlite)
+![JavaScript](https://img.shields.io/badge/-JavaScript-111?style=flat&logo=javascript)
+![Java](https://img.shields.io/badge/-Java-111?style=flat&logo=openjdk)
+![Windows](https://img.shields.io/badge/-Windows-111?style=flat&logo=windows)
+![macOS](https://img.shields.io/badge/-macOS-111?style=flat&logo=apple)
+![HTML5](https://img.shields.io/badge/-HTML5-111?style=flat&logo=html5)
+![CSS3](https://img.shields.io/badge/-CSS3-111?style=flat&logo=css3)
+
 
 ---
 
