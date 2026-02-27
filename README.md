@@ -10,7 +10,7 @@
 
 - 🔭 Работаю над проектами модерации Discord, Telegram-ботами, VPN
 - ⚙️ Технологии: Python, FastAPI, SQLite, React, Docker
-- 📫 Контакты: [Telegram](https://t.me/flipgood)
+- 📫 Контакты: [Telegram](https://t.me/flipgood), aeromax.live@mail.ru
 
 ---
 
