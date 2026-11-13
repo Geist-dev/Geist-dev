@@ -1,0 +1,114 @@
+[
+  {
+    "name": "close-discord",
+    "description": "Бот для организации матчей, турниров в CS2, Dota 2 и Valorant!",
+    "language": "Python",
+    "topics": [],
+    "html_url": "https://github.com/Geist-dev/close-discord",
+    "private": false,
+    "visibility": "public",
+    "fork": false,
+    "archived": false,
+    "owner": {
+      "login": "Geist-dev"
+    }
+  },
+  {
+    "name": "Alias",
+    "description": null,
+    "language": "JavaScript",
+    "topics": [],
+    "html_url": "https://github.com/Geist-dev/Alias",
+    "private": false,
+    "visibility": "public",
+    "fork": false,
+    "archived": false,
+    "owner": {
+      "login": "Geist-dev"
+    }
+  },
+  {
+    "name": "geist-discord.github.io",
+    "description": null,
+    "language": "HTML",
+    "topics": [],
+    "html_url": "https://github.com/Geist-dev/geist-discord.github.io",
+    "private": false,
+    "visibility": "public",
+    "fork": false,
+    "archived": false,
+    "owner": {
+      "login": "Geist-dev"
+    }
+  },
+  {
+    "name": "File-Storage",
+    "description": "Маленький, но полноценный pet-project на Python/JS — личное файловое хранилище с аутентификацией, drag&drop загрузкой, тегами и корзиной.",
+    "language": "Python",
+    "topics": [],
+    "html_url": "https://github.com/Geist-dev/File-Storage",
+    "private": false,
+    "visibility": "public",
+    "fork": false,
+    "archived": false,
+    "owner": {
+      "login": "Geist-dev"
+    }
+  },
+  {
+    "name": "Geist-dev",
+    "description": "Мой README который обновляется каждый день через скрипт с новыми проектами.",
+    "language": "Python",
+    "topics": [],
+    "html_url": "https://github.com/Geist-dev/Geist-dev",
+    "private": false,
+    "visibility": "public",
+    "fork": false,
+    "archived": false,
+    "owner": {
+      "login": "Geist-dev"
+    }
+  },
+  {
+    "name": "html-web-map-exporter",
+    "description": "QGIS plugin to export projects as interactive HTML web maps",
+    "language": "Python",
+    "topics": [],
+    "html_url": "https://github.com/Geist-dev/html-web-map-exporter",
+    "private": false,
+    "visibility": "public",
+    "fork": false,
+    "archived": false,
+    "owner": {
+      "login": "Geist-dev"
+    }
+  },
+  {
+    "name": "geist-dev.github.io",
+    "description": "Простой сайт-визитка для личного портфолио / резюме / презентации проектов.   Содержит информацию о себе, контакты и ссылки на социальные сети.",
+    "language": "HTML",
+    "topics": [],
+    "html_url": "https://github.com/Geist-dev/geist-dev.github.io",
+    "private": false,
+    "visibility": "public",
+    "fork": false,
+    "archived": false,
+    "owner": {
+      "login": "Geist-dev"
+    }
+  },
+  {
+    "name": "AttributeTemplateFiller",
+    "description": null,
+    "language": "Python",
+    "topics": [],
+    "html_url": "https://github.com/Geist-dev/AttributeTemplateFiller",
+    "private": false,
+    "visibility": "public",
+    "fork": false,
+    "archived": false,
+    "owner": {
+      "login": "Geist-dev"
+    }
+  }
+]
