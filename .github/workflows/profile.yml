@@ -36,19 +36,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Refresh both repository catalogs
+      - name: Refresh repository catalog
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: Geist-dev
         run: python scripts/update_readme.py
       - name: Commit catalog changes
         run: |
-          if git diff --quiet -- README.md README.ru.md; then
-            echo 'Catalogs are current'
+          if git diff --quiet -- README.md; then
+            echo 'Catalog is current'
           else
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add README.md README.ru.md
-            git commit -m 'docs: refresh bilingual repository catalogs'
+            git add README.md
+            git commit -m 'docs: refresh repository catalog'
             git push
           fi
