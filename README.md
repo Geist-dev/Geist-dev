@@ -1,146 +1,144 @@
-<p align="right"><strong>EN</strong> · <a href="README.ru.md">RU</a></p>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-  <img src="assets/header-light.svg" alt="Geist-dev — software developer. Web applications, automation and useful tools." width="960">
+  <img src="assets/header-light.svg" alt="Geist-dev — разработчик. Веб-приложения, автоматизация и полезные инструменты." width="960">
 </picture>
 
-**Python · Web applications · Automation · GIS · LLM-assisted development**
+**Python · Веб-приложения · Автоматизация · GIS · Разработка с LLM**
 
-I build personal projects that solve practical tasks: storing files, organizing team games, automating repetitive work, and sharing geographic data on the web. I work across backend logic, browser interfaces, desktop plugins, testing, and project setup.
+Разрабатываю личные проекты для практических задач: хранение файлов, организация командных игр, автоматизация повторяющейся работы и публикация геоданных в браузере. Работаю с серверной логикой, веб-интерфейсами, плагинами для настольных приложений, тестами и настройкой запуска.
 
-I use **Codex and Claude** as development tools, from exploring an idea and building a prototype to debugging, refactoring, writing tests, and documenting the result. My goal is to turn an idea into software that another person can run and understand.
+Использую **Codex и Claude** как инструменты разработки: от разбора идеи и прототипа до отладки, рефакторинга, тестирования и документации. Моя цель — превращать идеи в приложения, которые другой человек сможет запустить и понять.
 
-[Selected projects](#selected-projects) · [Technologies](#technologies-and-tools) · [LLM workflow](#working-with-llms) · [Contact](#contact)
+[Основные проекты](#основные-проекты) · [Технологии](#технологии-и-инструменты) · [Работа с LLM](#работа-с-llm) · [Контакты](#контакты)
 
-## Selected projects
+## Основные проекты
 
 ### [File Storage](https://github.com/Geist-dev/File-Storage)
 
-A personal file library with account isolation, uploads, folders, tags, search, image previews, and trash recovery.
+Личное файловое хранилище с изоляцией аккаунтов, загрузкой файлов, папками, тегами, поиском, предпросмотром изображений и восстановлением из корзины.
 
 **Python · FastAPI · SQLAlchemy · SQLite · JavaScript**
 
-- JWT authentication, bcrypt password hashing, and server-side ownership checks.
-- Files on disk, metadata in SQLite, and thumbnails generated with Pillow.
-- API tests, a browser regression scenario, and a single command to set up and run the app.
+- JWT-авторизация, хеширование паролей через bcrypt и серверная проверка владельца файлов.
+- Файлы на диске, метаданные в SQLite, миниатюры изображений через Pillow.
+- API-тесты, браузерный сценарий и одна команда для подготовки и запуска приложения.
 
-[Code and startup guide](https://github.com/Geist-dev/File-Storage#readme) · [Screenshots](https://github.com/Geist-dev/File-Storage#скриншоты) · [CI](https://github.com/Geist-dev/File-Storage/actions)
+[Код и инструкция запуска](https://github.com/Geist-dev/File-Storage#readme) · [Скриншоты](https://github.com/Geist-dev/File-Storage#скриншоты) · [CI](https://github.com/Geist-dev/File-Storage/actions)
 
 <details>
-<summary>Preview: file library</summary>
+<summary>Посмотреть библиотеку файлов</summary>
 
-![File Storage library](https://raw.githubusercontent.com/Geist-dev/File-Storage/main/docs/screenshots/02-library.png)
+![Библиотека File Storage](https://raw.githubusercontent.com/Geist-dev/File-Storage/main/docs/screenshots/02-library.png)
 
 </details>
 
 ### [Close Bot](https://github.com/Geist-dev/close-discord)
 
-A Discord bot that helps organize team matches and tournaments in CS2, Dota 2, and Valorant.
+Discord-бот для организации командных матчей и турниров в CS2, Dota 2 и Valorant.
 
 **Python · disnake · asyncio · SQLite · Discord API**
 
-- Slash commands, buttons, registration, team selection, and match channels.
-- Persistent match settings and temporary restrictions with recovery after interruptions.
-- Configuration validation, an isolated test-server mode, and automated tests.
+- Slash-команды, кнопки, регистрация игроков, распределение по командам и каналы матчей.
+- Сохранение настроек матчей и временных ограничений с восстановлением после сбоев.
+- Проверка конфигурации, режим отдельного тестового сервера и автоматические тесты.
 
-[Code and startup guide](https://github.com/Geist-dev/close-discord#readme) · [Screenshots](https://github.com/Geist-dev/close-discord#скриншоты) · [CI](https://github.com/Geist-dev/close-discord/actions)
+[Код и инструкция запуска](https://github.com/Geist-dev/close-discord#readme) · [Скриншоты](https://github.com/Geist-dev/close-discord#скриншоты) · [CI](https://github.com/Geist-dev/close-discord/actions)
 
 ### [Alias](https://github.com/Geist-dev/Alias)
 
-A multiplayer browser word game: players form teams, explain words, and keep score against a timer.
+Сетевая браузерная игра: участники собираются в команды, объясняют слова и набирают очки за ограниченное время.
 
 **Node.js · Express · WebSocket · JavaScript · HTML / CSS**
 
-- A word is sent only to the active explainer; the server checks host permissions and game actions.
-- Pausing, score corrections, alternating turns, and session recovery after reconnection.
-- Game-rule tests, real WebSocket tests, and a four-client browser scenario.
+- Слово получает только активный объясняющий; права ведущего и игровые действия проверяются сервером.
+- Пауза, корректировка счёта, смена хода и восстановление сессии после переподключения.
+- Тесты игровых правил, настоящих WebSocket-соединений и браузерный сценарий на четырёх клиентах.
 
-[Code and startup guide](https://github.com/Geist-dev/Alias#readme) · [Screenshots](https://github.com/Geist-dev/Alias#скриншоты) · [CI](https://github.com/Geist-dev/Alias/actions)
+[Код и инструкция запуска](https://github.com/Geist-dev/Alias#readme) · [Скриншоты](https://github.com/Geist-dev/Alias#скриншоты) · [CI](https://github.com/Geist-dev/Alias/actions)
 
 <details>
-<summary>Preview: the explainer's turn</summary>
+<summary>Посмотреть ход объясняющего</summary>
 
-![Alias explainer view](https://raw.githubusercontent.com/Geist-dev/Alias/main/docs/screenshots/02-explainer.png)
+![Интерфейс объясняющего в Alias](https://raw.githubusercontent.com/Geist-dev/Alias/main/docs/screenshots/02-explainer.png)
 
 </details>
 
-### GIS tools for QGIS
+### GIS-инструменты для QGIS
 
-I also develop Python plugins for geographic workflows and repetitive data-entry tasks.
+Также разрабатываю Python-плагины для работы с геоданными и автоматизации повторяющегося ввода.
 
-| Project | Purpose | Technologies |
+| Проект | Задача | Технологии |
 | --- | --- | --- |
-| [AttributeTemplateFiller](https://github.com/Geist-dev/AttributeTemplateFiller) | Reusable attribute presets, autofill for new vector features, and JSON import/export. | Python · PyQGIS · PyQt · QSettings |
-| [HTML Web Map Exporter](https://github.com/Geist-dev/html-web-map-exporter) | Export QGIS projects as interactive HTML maps with layers, labels, and a legend. | Python · PyQGIS · PyQt · HTML / JavaScript |
+| [AttributeTemplateFiller](https://github.com/Geist-dev/AttributeTemplateFiller) | Шаблоны атрибутов, автозаполнение новых векторных объектов, импорт и экспорт JSON. | Python · PyQGIS · PyQt · QSettings |
+| [HTML Web Map Exporter](https://github.com/Geist-dev/html-web-map-exporter) | Экспорт проектов QGIS в интерактивные HTML-карты со слоями, подписями и легендой. | Python · PyQGIS · PyQt · HTML / JavaScript |
 
-## Technologies and tools
+## Технологии и инструменты
 
-The following reflects tools used across my projects and development workflow. Individual repositories show the actual implementation and scope.
+Здесь собраны инструменты, которые использую в проектах и процессе разработки. Конкретную реализацию и объём возможностей можно посмотреть в соответствующем репозитории.
 
-| Area | Technologies and tasks |
+| Направление | Технологии и задачи |
 | --- | --- |
-| Languages and interfaces | Python, JavaScript, HTML5, CSS3; responsive layouts, DOM events, forms, browser storage, dark/light themes. |
-| Backend and APIs | FastAPI, Uvicorn, Pydantic, Express, Node.js, HTTP / REST, JSON, request validation, WebSocket communication, asynchronous Python. |
-| Data and files | SQLite, SQLAlchemy, SQL queries, filesystem storage, metadata, filtering, pagination, image thumbnails with Pillow. |
-| Authentication and application checks | JWT, bcrypt, ownership and role checks, input validation, upload limits, environment variables, `.env` configuration, safe text rendering. |
-| Bots and integrations | Discord API, disnake, slash commands, interactive components, channels and roles; Telegram bot projects and automation. |
-| GIS and desktop tooling | QGIS, PyQGIS, PyQt, Qt widgets, QSettings, attribute templates, vector/raster layers, coordinate transformations, HTML map export. |
-| Testing and debugging | pytest, unittest, Node.js test runner, API and WebSocket checks, Playwright / Chromium, browser developer tools, regression scenarios. |
-| Development and delivery | Git, GitHub, branches, pull requests, GitHub Actions, CI, Bash, Python `venv`, pip, npm, lockfiles, setup scripts, GitHub Pages. |
-| LLM tools | Codex, Claude, task decomposition, prompting, working with repository context, iterative implementation and review. |
+| Языки и интерфейсы | Python, JavaScript, HTML5, CSS3; адаптивная вёрстка, DOM, события, формы, браузерные хранилища, тёмная и светлая темы. |
+| Backend и API | FastAPI, Uvicorn, Pydantic, Express, Node.js, HTTP / REST, JSON, валидация запросов, WebSocket, асинхронный Python. |
+| Данные и файлы | SQLite, SQLAlchemy, SQL-запросы, хранение файлов на диске, метаданные, фильтры, пагинация, миниатюры изображений через Pillow. |
+| Авторизация и проверки приложения | JWT, bcrypt, проверка владельца и ролей, валидация ввода, ограничения загрузки, переменные окружения, `.env`, безопасный вывод текста. |
+| Боты и интеграции | Discord API, disnake, slash-команды, интерактивные компоненты, каналы и роли; проекты Telegram-ботов и автоматизация. |
+| GIS и настольные инструменты | QGIS, PyQGIS, PyQt, Qt-виджеты, QSettings, шаблоны атрибутов, векторные и растровые слои, преобразование координат, экспорт HTML-карт. |
+| Тестирование и отладка | pytest, unittest, встроенный test runner Node.js, проверки API и WebSocket, Playwright / Chromium, инструменты разработчика браузера, регрессионные сценарии. |
+| Разработка и публикация | Git, GitHub, ветки, pull request, GitHub Actions, CI, Bash, Python `venv`, pip, npm, lockfile, скрипты запуска, GitHub Pages. |
+| LLM-инструменты | Codex, Claude, декомпозиция задач, промпты, работа с контекстом репозитория, последовательная реализация и проверка изменений. |
 
 <details>
-<summary>Additional experience and environments</summary>
+<summary>Дополнительный опыт и рабочие среды</summary>
 
-React, Docker, and Java are also part of my broader technology experience. I work with Linux, macOS, and Windows, and account for shell and environment differences in setup instructions.
+В мой более широкий опыт также входят React, Docker и Java. Работаю с Linux, macOS и Windows; учитываю различия оболочек и окружений в инструкциях запуска.
 
-My project interests include Telegram bots, community tools, VPN-related tooling, and small utilities. The featured repositories above are the clearest examples to explore first.
+Среди интересующих меня задач — Telegram-боты, инструменты для сообществ, VPN-инструменты и небольшие утилиты. Основные репозитории выше — самые наглядные примеры, с которых стоит начать знакомство.
 
 </details>
 
-## Working with LLMs
+## Работа с LLM
 
-I use LLM coding tools as part of an iterative development process:
+Использую LLM-инструменты в последовательном процессе разработки:
 
-1. Break an idea into concrete behavior, constraints, and small tasks.
-2. Work with the existing code and give the model relevant repository context.
-3. Implement and revise features, investigate errors, and review suggested changes.
-4. Check behavior with automated tests and hands-on application runs.
-5. Prepare setup instructions, screenshots, configuration examples, and changes for GitHub.
+1. Разбираю идею на конкретное поведение, ограничения и небольшие задачи.
+2. Работаю с существующим кодом и передаю модели нужный контекст репозитория.
+3. Реализую и дорабатываю функции, разбираю ошибки и проверяю предложенные изменения.
+4. Проверяю поведение автоматическими тестами и запуском приложения.
+5. Подготавливаю инструкции, скриншоты, примеры конфигурации и изменения для GitHub.
 
-My current focus is **building and improving software with Codex and Claude**. I am interested in practical LLM applications and in making this workflow more reliable through clearer tasks and verification.
+Мой текущий фокус — **создание и улучшение приложений с Codex и Claude**. Мне интересны практические применения LLM и повышение надёжности такого процесса через понятные задачи и проверку результата.
 
-## What you can inspect here
+## Что можно проверить в проектах
 
-The featured repositories include startup instructions, configuration examples, real screenshots, and tests. Their READMEs explain architecture and current limitations. I care about making projects reproducible: download the code, follow the instructions, and try the result.
+В основных репозиториях есть инструкции запуска, примеры конфигурации, реальные скриншоты и тесты. В README описаны архитектура и текущие ограничения. Стараюсь делать проекты воспроизводимыми: скачать код, выполнить инструкцию и попробовать результат.
 
 <details>
-<summary>All public repositories</summary>
+<summary>Все публичные репозитории</summary>
 
-This catalog is refreshed automatically. The two language versions share one set of curated project descriptions.
+Каталог обновляется автоматически из публичных репозиториев GitHub.
 
 <!-- PROJECTS:START -->
-| Repository | What it does | Technologies |
+| Репозиторий | Что делает | Технологии |
 | --- | --- | --- |
-| [File-Storage](https://github.com/Geist-dev/File-Storage) | Personal file storage with authentication, upload, tags, search and trash recovery. | Python · FastAPI · SQLite · JavaScript |
-| [close-discord](https://github.com/Geist-dev/close-discord) | Discord bot for organizing team matches and tournaments in CS2, Dota 2 and Valorant. | Python · disnake · SQLite |
-| [Alias](https://github.com/Geist-dev/Alias) | Browser word game with teams, private words, a timer, scoring and reconnect support. | Node.js · Express · WebSocket |
-| [AttributeTemplateFiller](https://github.com/Geist-dev/AttributeTemplateFiller) | QGIS plugin for reusable attribute presets and automatic filling of new vector features. | Python · PyQGIS · PyQt |
-| [html-web-map-exporter](https://github.com/Geist-dev/html-web-map-exporter) | QGIS plugin for exporting projects as interactive HTML web maps. | Python · PyQGIS · HTML / JavaScript |
-| [geist-dev.github.io](https://github.com/Geist-dev/geist-dev.github.io) | Personal website with information, projects and contact links. | HTML · CSS · JavaScript |
-| [geist-discord.github.io](https://github.com/Geist-dev/geist-discord.github.io) | Developer portfolio with two themes and optional live Discord and Spotify presence. | HTML · CSS · JavaScript · Express |
+| [File-Storage](https://github.com/Geist-dev/File-Storage) | Личное файловое хранилище: авторизация, загрузка, теги, поиск и восстановление из корзины. | Python · FastAPI · SQLite · JavaScript |
+| [close-discord](https://github.com/Geist-dev/close-discord) | Discord-бот для командных матчей и турниров в CS2, Dota 2 и Valorant. | Python · disnake · SQLite |
+| [Alias](https://github.com/Geist-dev/Alias) | Браузерная игра: команды, приватные слова, таймер, очки и восстановление соединения. | Node.js · Express · WebSocket |
+| [AttributeTemplateFiller](https://github.com/Geist-dev/AttributeTemplateFiller) | Плагин QGIS: шаблоны атрибутов и автоматическое заполнение новых векторных объектов. | Python · PyQGIS · PyQt |
+| [html-web-map-exporter](https://github.com/Geist-dev/html-web-map-exporter) | Плагин QGIS для экспорта проектов в интерактивные HTML-карты. | Python · PyQGIS · HTML / JavaScript |
+| [geist-dev.github.io](https://github.com/Geist-dev/geist-dev.github.io) | Личный сайт с информацией о разработчике, проектами и контактами. | HTML · CSS · JavaScript |
+| [geist-discord.github.io](https://github.com/Geist-dev/geist-discord.github.io) | Портфолио с двумя темами, живым статусом Discord и музыкой Spotify. | HTML · CSS · JavaScript · Express |
 <!-- PROJECTS:END -->
 
 </details>
 
-## Contact
+## Контакты
 
-I am interested in software development opportunities and collaboration on useful projects.
+Интересуют предложения по разработке и совместная работа над полезными проектами.
 
 **Telegram:** [@flipgood](https://t.me/flipgood)
 
-**Email:** [aeromax.live@mail.ru](mailto:aeromax.live@mail.ru)
+**Почта:** [aeromax.live@mail.ru](mailto:aeromax.live@mail.ru)
 
 **GitHub:** [Geist-dev](https://github.com/Geist-dev)

@@ -1,37 +1,30 @@
 {
   "File-Storage": {
     "stack": "Python · FastAPI · SQLite · JavaScript",
-    "en": "Personal file storage with authentication, upload, tags, search and trash recovery.",
     "ru": "Личное файловое хранилище: авторизация, загрузка, теги, поиск и восстановление из корзины."
   },
   "close-discord": {
     "stack": "Python · disnake · SQLite",
-    "en": "Discord bot for organizing team matches and tournaments in CS2, Dota 2 and Valorant.",
     "ru": "Discord-бот для командных матчей и турниров в CS2, Dota 2 и Valorant."
   },
   "Alias": {
     "stack": "Node.js · Express · WebSocket",
-    "en": "Browser word game with teams, private words, a timer, scoring and reconnect support.",
     "ru": "Браузерная игра: команды, приватные слова, таймер, очки и восстановление соединения."
   },
   "AttributeTemplateFiller": {
     "stack": "Python · PyQGIS · PyQt",
-    "en": "QGIS plugin for reusable attribute presets and automatic filling of new vector features.",
     "ru": "Плагин QGIS: шаблоны атрибутов и автоматическое заполнение новых векторных объектов."
   },
   "html-web-map-exporter": {
     "stack": "Python · PyQGIS · HTML / JavaScript",
-    "en": "QGIS plugin for exporting projects as interactive HTML web maps.",
     "ru": "Плагин QGIS для экспорта проектов в интерактивные HTML-карты."
   },
   "geist-discord.github.io": {
     "stack": "HTML · CSS · JavaScript · Express",
-    "en": "Developer portfolio with two themes and optional live Discord and Spotify presence.",
     "ru": "Портфолио с двумя темами, живым статусом Discord и музыкой Spotify."
   },
   "geist-dev.github.io": {
     "stack": "HTML · CSS · JavaScript",
-    "en": "Personal website with information, projects and contact links.",
     "ru": "Личный сайт с информацией о разработчике, проектами и контактами."
   }
 }

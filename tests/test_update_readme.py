@@ -31,18 +31,16 @@ class CatalogTests(unittest.TestCase):
             bad.append(repo)
         self.assertEqual(module.select_repos(bad, 'Geist-dev'), [])
 
-    def test_language_specific_descriptions_and_correct_alias_scope(self):
+    def test_russian_descriptions_and_correct_alias_scope(self):
         selected = module.select_repos(self.repos, 'Geist-dev')
-        en = module.format_table(selected, 'en', self.descriptions, 'Geist-dev')
-        ru = module.format_table(selected, 'ru', self.descriptions, 'Geist-dev')
-        self.assertIn('Browser word game', en)
+        ru = module.format_table(selected, self.descriptions, 'Geist-dev')
         self.assertIn('Браузерная игра', ru)
-        self.assertNotIn('Discord Activity', en)
-        self.assertIn('Node.js · Express · WebSocket', en)
+        self.assertNotIn('Discord Activity', ru)
+        self.assertIn('Node.js · Express · WebSocket', ru)
 
     def test_api_text_cannot_break_table_or_insert_html(self):
         repo = {'name': 'new-project', 'description': '<img src=x> | row\nnext', 'language': 'Python'}
-        table = module.format_table([repo], 'en', {}, 'Geist-dev')
+        table = module.format_table([repo], {}, 'Geist-dev')
         self.assertNotIn('<img', table)
         self.assertIn('&lt;img src=x&gt; &#124; row next', table)
         self.assertEqual(len(table.splitlines()), 3)
@@ -60,14 +58,13 @@ class CatalogTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 module.replace_section(text, 'replacement')
 
-    def test_both_languages_are_validated_before_any_write(self):
+    def test_missing_markers_preserve_existing_readme(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / 'scripts').mkdir()
             (root / 'scripts/projects.json').write_text(json.dumps(self.descriptions))
             en = root / 'README.md'
-            en.write_text(module.START + module.END)
-            (root / 'README.ru.md').write_text('missing markers')
+            en.write_text('missing markers')
             before = en.read_text()
             with self.assertRaises(ValueError):
                 module.update_documents(root, self.repos, 'Geist-dev')
@@ -78,18 +75,21 @@ class CatalogTests(unittest.TestCase):
             module.update_documents(ROOT, [], 'Geist-dev')
 
     def test_readme_links_assets_contacts_and_markers(self):
-        for filename, sibling in [('README.md', 'README.ru.md'), ('README.ru.md', 'README.md')]:
-            text = (ROOT / filename).read_text()
-            self.assertIn(f'href="{sibling}"', text)
-            self.assertIn('https://t.me/flipgood', text)
-            self.assertIn('mailto:aeromax.live@mail.ru', text)
-            self.assertIn('Codex', text)
-            self.assertIn('Claude', text)
-            self.assertEqual(text.count(module.START), 1)
-            self.assertEqual(text.count(module.END), 1)
-            self.assertNotIn('herokuapp.com', text)
-            for theme in ['dark', 'light']:
-                self.assertTrue((ROOT / f'assets/header-{theme}.svg').is_file())
+        text = (ROOT / 'README.md').read_text()
+        self.assertFalse((ROOT / 'README.ru.md').exists())
+        self.assertNotIn('README.ru.md', text)
+        self.assertNotIn('>EN<', text)
+        self.assertIn('## Основные проекты', text)
+        self.assertIn('https://t.me/flipgood', text)
+        self.assertIn('mailto:aeromax.live@mail.ru', text)
+        self.assertIn('Codex', text)
+        self.assertIn('Claude', text)
+        self.assertEqual(text.count(module.START), 1)
+        self.assertEqual(text.count(module.END), 1)
+        self.assertNotIn('herokuapp.com', text)
+        for theme in ['dark', 'light']:
+            self.assertTrue((ROOT / f'assets/header-{theme}.svg').is_file())
+
 
 
 if __name__ == '__main__':
