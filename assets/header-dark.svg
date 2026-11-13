@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="210" viewBox="0 0 960 210" role="img" aria-labelledby="title desc">
+  <title id="title">Geist-dev — software developer</title>
+  <desc id="desc">Web applications, automation, GIS, and LLM-assisted development.</desc>
+  <rect x="1" y="1" width="958" height="208" rx="16" fill="#10161f" stroke="#293443"/>
+  <path d="M40 38h32" stroke="#83dfc3" stroke-width="4" stroke-linecap="round"/>
+  <text x="86" y="44" fill="#a3b0c0" font-family="monospace" font-size="13" letter-spacing="3">SOFTWARE / AUTOMATION</text>
+  <text x="38" y="126" fill="#edf2f7" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="68" letter-spacing="-2">Geist-dev</text>
+  <text x="42" y="170" fill="#a3b0c0" font-family="Arial, Helvetica, sans-serif" font-size="20">Web applications. Useful tools. Thoughtful workflows.</text>
+  <g fill="none" stroke="#293443" stroke-width="2">
+    <rect x="760" y="62" width="102" height="102" rx="14"/>
+    <path d="M778 88l-12 13 12 13m66-26 12 13-12 13m-39 18 18-56" stroke="#83dfc3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M724 126h36m102-27h34m-85 65v17"/>
+    <circle cx="716" cy="126" r="6" fill="#10161f"/>
+    <circle cx="904" cy="99" r="6" fill="#10161f"/>
+    <circle cx="811" cy="187" r="6" fill="#10161f"/>
+  </g>
+</svg>
