@@ -9,7 +9,7 @@ on:
       - 'README*'
       - 'scripts/**'
       - 'tests/**'
-      - '.github/workflows/update-readme.yml'
+      - '.github/workflows/profile.yml'
   pull_request:
 permissions:
   contents: read
