@@ -4,7 +4,7 @@
   <img src="assets/header-light.svg" alt="Geist-dev — разработчик" width="960">
 </picture>
 
-Разрабатываю веб-приложения, ботов и инструменты для работы с геоданными. Интересуюсь автоматизацией и LLM.
+Разрабатываю веб-приложения, ботов и инструменты для работы с геоданными. Интегрирую локальные AI-модели в приложения.
 
 ## Стек
 
@@ -13,6 +13,7 @@
 | Backend | Python, FastAPI, Node.js, Express, REST API, WebSocket |
 | Frontend | JavaScript, React, HTML, CSS |
 | Данные | SQLite, SQLAlchemy, JSON |
+| AI / ML | Локальные LLM и VLM, Ollama, Qwen3-VL, PyTorch, YOLO |
 | Боты и GIS | Discord API, disnake, Telegram, QGIS, PyQGIS, PyQt |
 | Инструменты | Git, Docker, Linux, Bash, GitHub Actions, pytest, Playwright |
 
